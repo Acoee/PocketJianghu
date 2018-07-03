@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lineImageView" >
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/lineImageView"
+        style="@style/line_horizontal_style"
+        android:layout_above="@+id/bottomNavLayout" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nav_bg_color"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/navHome"
+            style="@style/nav_rl_style" >
+
+            <ImageView
+                style="@style/nav_icon_style"
+                android:background="@mipmap/nav_home_unselected" />
+
+            <TextView
+                style="@style/nav_text_style"
+                android:text="@string/nav_home_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navWorld"
+            style="@style/nav_rl_style" >
+
+            <ImageView
+                style="@style/nav_icon_style"
+                android:background="@mipmap/nav_world_unselected" />
+
+            <TextView
+                style="@style/nav_text_style"
+                android:text="@string/nav_world_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navVarious"
+            style="@style/nav_rl_style" >
+
+            <ImageView
+                style="@style/nav_icon_style"
+                android:background="@mipmap/nav_various_unselected" />
+
+            <TextView
+                style="@style/nav_text_style"
+                android:text="@string/nav_various_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/navCenter"
+            style="@style/nav_rl_style" >
+
+            <ImageView
+                style="@style/nav_icon_style"
+                android:background="@mipmap/nav_center_unselected" />
+
+            <TextView
+                style="@style/nav_text_style"
+                android:text="@string/nav_center_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

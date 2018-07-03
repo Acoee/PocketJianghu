@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.jianghu.ui.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/main_color"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:gravity="center_vertical"/>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnablePreviewInEditMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.app.jianghu.widget.banner.BannerView
+                android:id="@+id/bannerView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_12"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/martialArt"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/martial_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/achieveText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/achieve_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/instanceText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/instance_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/encounterText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/encounter_text"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_12"
+                android:paddingBottom="@dimen/dimen_12"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/petText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/pet_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/equipText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/equip_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/skillsText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/skills_text"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/othersText"
+                    android:layout_weight="1"
+                    style="@style/normal_text_style"
+                    android:drawableTop="@mipmap/home_service_icon"
+                    android:drawablePadding="@dimen/dimen_5"
+                    android:text="@string/others_text"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_12"
+                android:background="@color/main_color">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_3"
+                    android:background="@drawable/white_bg_round_corner_border">
+
+                    <TextView
+                        android:id="@+id/reportTitleText"
+                        style="@style/normal_text_style"
+                        android:layout_marginStart="@dimen/dimen_5"
+                        android:drawableStart="@mipmap/bulletin_icon"
+                        android:drawablePadding="@dimen/dimen_3"
+                        android:text="@string/the_world_report"
+                        android:textStyle="italic" />
+
+                    <com.app.jianghu.widget.AutoTextSwitcher
+                        android:id="@+id/textSwitcher"
+                        android:layout_toRightOf="@+id/reportTitleText"
+                        android:layout_toLeftOf="@id/moreLeftBorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_5"
+                        android:layout_marginEnd="@dimen/dimen_12">
+                    </com.app.jianghu.widget.AutoTextSwitcher>
+
+                    <ImageView
+                        android:id="@+id/moreLeftBorder"
+                        style="@style/line_vertical_style"
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="@dimen/dimen_20"
+                        android:layout_toLeftOf="@id/moreText" />
+
+                    <TextView
+                        android:id="@+id/moreText"
+                        android:layout_alignParentRight="true"
+                        style="@style/normal_text_style"
+                        android:paddingStart="@dimen/dimen_5"
+                        android:layout_marginRight="@dimen/dimen_5"
+                        android:text="@string/more_text" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

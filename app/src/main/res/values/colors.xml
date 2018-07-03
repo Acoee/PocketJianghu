@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 普通字体颜色 -->
+    <color name="normal_text_color">#333333</color>
+    <color name="normal_gray_color">#989898</color>
+    <color name="normal_gray_color2">#606060</color>
+    <color name="normal_text_pressed_color">#404040</color>
+    <color name="main_nav_text_color">#5f656a</color>
+
+    <color name="black_trans_color">#20000000</color>
+
+    <!-- 主色调 -->
+    <color name="favourite_color">#78b4b9</color>
+    <color name="main_color">#99dfdd</color>
+    <color name="main_pressed_color">#8cc2c0</color>
+    <color name="main_disable_color">#06dbed</color>
+    <color name="main_bg_color">#f3f3f3</color>
+    <color name="main_nav_color">#eef6ff</color>
+    <color name="main_green_color">#00a751</color>
+    <color name="main_yellow_color">#ec6c00</color>
+    <color name="main_red_color">#d11515</color>
+
+    <!-- 分割线颜色 -->
+    <color name="line_color">#d2d1d1</color>
+    <!-- 导航栏背景色 -->
+    <color name="nav_bg_color">#ffffff</color>
+
+</resources>

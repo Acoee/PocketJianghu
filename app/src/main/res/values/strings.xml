@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SECRET</string>
+
+    <string name="nav_home_text">首页</string>
+    <string name="nav_world_text">江湖</string>
+    <string name="nav_various_text">百态</string>
+    <string name="nav_center_text">我的</string>
+
+    <string name="martial_text">武学</string>
+    <string name="achieve_text">成就</string>
+    <string name="instance_text">副本</string>
+    <string name="encounter_text">奇遇</string>
+    <string name="pet_text">跟宠</string>
+    <string name="equip_text">装备</string>
+    <string name="skills_text">技艺</string>
+    <string name="others_text">其他</string>
+
+    <string name="the_world_report">江湖快报：</string>
+    <string name="more_text">更多</string>
+</resources>
